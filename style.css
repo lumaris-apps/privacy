@@ -1,0 +1,124 @@
+/* Marea's light and dark colours (marea-roja src/ui/theme/palettes.ts, "marea"). System fonts:
+   the page makes no request to any other site. */
+:root {
+  --background: #fbf8f6;
+  --surface: #ffffff;
+  --text: #1f1a19;
+  --text-secondary: #6b605d;
+  --text-muted: #9a8f8b;
+  --outline: #e7dfdb;
+  --primary: #a33a35;
+  --primary-soft: #f6e3e0;
+  --on-primary-soft: #5c1a16;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #141112;
+    --surface: #1e1a1a;
+    --text: #f3ecea;
+    --text-secondary: #bdb1ad;
+    --text-muted: #8a7f7c;
+    --outline: #3a3331;
+    --primary: #e8a49e;
+    --primary-soft: #3a2423;
+    --on-primary-soft: #f6d6d2;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font: 17px/1.6 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 3rem;
+}
+
+h1,
+h2,
+.house {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 1.9rem;
+  margin: 0 0 0.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 2rem 0 0.5rem;
+}
+
+a {
+  color: var(--primary);
+}
+
+.meta {
+  color: var(--text-secondary);
+  margin: 0 0 1.5rem;
+}
+
+.languages {
+  margin: 0 0 2rem;
+  font-size: 0.95rem;
+}
+
+.summary {
+  background: var(--primary-soft);
+  color: var(--on-primary-soft);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+
+.summary ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+section + section {
+  border-top: 1px solid var(--outline);
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+
+.apps {
+  list-style: none;
+  padding: 0;
+}
+
+.apps li {
+  background: var(--surface);
+  border: 1px solid var(--outline);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+
+footer {
+  border-top: 1px solid var(--outline);
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+.house {
+  color: var(--text);
+  font-size: 1.15rem;
+}

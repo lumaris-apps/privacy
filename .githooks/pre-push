@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Shim: the foundation's guard (ACC-01, ACC-05 remote owners; ACC-02 signed commits).
+exec "${HOME}/personal/foundation/tools/git/pre-push" "$@"

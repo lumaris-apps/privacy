@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# ADR rules (ADR-01, ADR-02) from the foundation clone; nothing here needs building.
+set -euo pipefail
+foundation="${HOME}/personal/foundation"
+"${foundation}/tools/adr-lint" "$(git rev-parse --show-toplevel)"
+"${foundation}/tools/adr-immutable" --staged
