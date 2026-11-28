@@ -2,6 +2,7 @@
 
 Public privacy-policy pages for every Lumaris app (HOST-01), GitHub Pages from `main`.
 Personal ground rules: `~/personal/CLAUDE.md` (foundation). Remote: `git@github-personal:lumaris-apps/privacy.git` (ACC-05).
+@../foundation/rules/CLAUDE.personal.md
 
 - One folder per app (`<app>/index.html`), listed on the root `index.html`. Spanish first, then English.
 - A policy states only what the app's code does: re-read the app (database migrations,
